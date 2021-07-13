@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "blog-site-7a8f0": {
+      "hosting": {
+        "admin": [
+          "blog-site-7a8f0"
+        ]
+      }
+    }
+  }
+}

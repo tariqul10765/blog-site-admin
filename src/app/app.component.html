@@ -1,0 +1,15 @@
+<mat-drawer-container>
+  <mat-drawer mode = 'side' [(opened)] = 'opened'>
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <button *ngIf = 'opened === false' (click) = 'opened = true'>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_right</mat-icon>
+    </button>
+    <button *ngIf = 'opened === true' (click) = 'opened = false'>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">keyboard_arrow_left</mat-icon>
+    </button>
+
+    <app-main></app-main>
+  </mat-drawer-content>
+</mat-drawer-container>
